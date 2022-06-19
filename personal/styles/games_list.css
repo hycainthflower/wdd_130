@@ -1,19 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100&family=Saira+Semi+Condensed:wght@100&display=swap');
 
-
-div.nav {
+body {
     display: grid;
-    grid-column-start: 2;
-    grid-row-start: 2;
+    background : linear-gradient(#91a768,#377771);
+    align-self: center;
+    justify-content: center;
+
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    font-family: 'Saira Condensed', sans-serif;
+
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+  }  
+
 
 div.logo {
-    display: grid;
-    grid-column-start: 2;
+    grid-column-start: 1;
     grid-row-start: 1;
     justify-content: center;
+    z-index: var(--i);
 }
 img.logo {
+    
     width: 300px;
     height: auto;
     transform: skewY(-15deg);
@@ -22,36 +40,29 @@ img.logo {
     
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;  
-}
-
-body {
+div.nav {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-row-start: 2;
+    grid-column-end: 1;
+    position: fixed;
 
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: linear-gradient(#91a768,#377771);
+    height: 1000px;
+    width: 350px;
+    background-color: #2a5856;
 
-    font-family: 'Saira Condensed', sans-serif;
-
-    
-}
-
-div.content{
-    font-size: 200px;
 }
 
 ul {
-    grid-column-start: 3;
-    grid-row-start: 3;
+    
+    position: fixed;
+    margin-left: 100px;
+    padding-top: 10px;
+    grid-column-start: 1;
+    grid-row-start: 2;
     position: relative;
     transform: skewY(-15deg);
+    
 }
 ul li {
     position: relative;
@@ -65,7 +76,7 @@ ul li {
 
 ul li:hover {
     background: rebeccapurple;
-    transform: translateX(-50px);
+    transform: translateX(50px);
 }
 
 ul li::before {
@@ -107,7 +118,31 @@ ul li:hover a {
     color: #fff;
 }
 
+div.content{
+    font-size: 55px;
+    color: #fff;
+    align-self: center;
+    grid-column-start: 3;
+}
 
+.p {
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+}
+
+img.eldenring {
+    
+    width: 500px;
+    height: auto;
+    grid-column-start: 2;
+}
+
+img.haloinfinite {
+    margin: 20px;
+    width: 500px;
+    height: auto;
+}
 
 .footer {
     position: fixed;
