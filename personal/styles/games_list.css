@@ -6,7 +6,7 @@
 		transform: translatey(0px);
 	}
 	50% {
-		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		box-shadow: 0 15px 15px 0px rgba(0,0,0,0.2);
 		transform: translatey(-20px);
 	}
 	100% {
@@ -18,7 +18,9 @@
 
 body {
     display: grid;
-    background : linear-gradient(#91a768,#377771);
+    /* background : linear-gradient(#91a768,#377771); */
+    
+    background:#254642;
     align-self: center;
     justify-content: center;
 
@@ -65,6 +67,7 @@ div.nav {
     grid-row-start: 2;
     grid-column-end: 1;
     position: fixed;
+    z-index: 2;
 
     height: 100vh;
     width: 250px;
@@ -141,24 +144,42 @@ ul li:hover a {
 }
 
 div.content{
+    
+    background : radial-gradient(#91a768,#377771);
+    z-index: 1;
+    grid-row-start: 2;
+    margin: 10px;
+    display: grid;
     font-size: 55px;
     color: #fff;
     align-self: center;
     grid-column-start: 3;
+
+    
+    border-radius: 10px;
+    border: transparent;
+    /* background: linear-gradient(#377771,#91a768); */
+    
+    animation: float 3s ease-in-out infinite;
 }
 
-.p {
+p {
+    grid-column-start: 2;
     justify-content: center;
     align-content: center;
     align-self: center;
+    text-align: center;
 }
 
 a.eldenring {
-    margin-left: 10px;
+    
+    z-index: var(--i);
+    overflow: hidden;
+    margin: 40px;
     width: 200px;
     height: auto;
     border-radius: 10px;
-    grid-column-start: 2;
+    grid-column-start: 1;
     grid-row-start: 2;
     transition: all 0.5s ease;
     position: relative;
@@ -176,6 +197,8 @@ a.eldenring:hover {
 
  
 img.eldenring {
+    
+    z-index: var(--i);
     width: 200px;
     height: auto;
     
@@ -197,8 +220,10 @@ img.haloinfinite {
 }
 
 a.haloinfinite {
-    margin-left: 10px;
-    grid-column-start: 3;
+    
+    z-index: var(--i);
+    margin: 40px;
+    grid-column-start: 2;
     grid-row-start: 2;
     width: 200px;
     height: auto;
@@ -237,8 +262,9 @@ img.nomanssky {
 }
 
 a.nomanssky {
-    margin-left: 10px;
-    grid-column-start: 4;
+    z-index: var(--i);
+    margin: 40px;
+    grid-column-start: 3;
     grid-row-start: 2;
     width: 200px;
     height: auto;
@@ -276,8 +302,9 @@ img.finalfantasyxiv {
 }
 
 a.finalfantasyxiv {
-    margin-left: 10px;
-    grid-column-start: 2;
+    z-index: var(--i);
+    margin: 40px;
+    grid-column-start: 1;
     grid-row-start: 3;
     width: 200px;
     height: auto;
@@ -311,6 +338,7 @@ a.finalfantasyxiv:hover {
   color: white;
   text-align: center;
   padding: 15px;
+  z-index: 3;
 }
 
 @media screen and (max-width: 800px) {
