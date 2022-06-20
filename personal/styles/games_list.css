@@ -184,7 +184,6 @@ img.eldenring {
     background: linear-gradient(#377771,#91a768);
 }
 
-
 img.haloinfinite {
     width: 200px;
     height: auto;
@@ -198,6 +197,7 @@ img.haloinfinite {
 }
 
 a.haloinfinite {
+    margin-left: 10px;
     grid-column-start: 3;
     grid-row-start: 2;
     width: 200px;
@@ -223,6 +223,7 @@ a.haloinfinite:hover {
     
 }
 
+
 img.nomanssky {
     width: 200px;
     height: auto;
@@ -236,6 +237,7 @@ img.nomanssky {
 }
 
 a.nomanssky {
+    margin-left: 10px;
     grid-column-start: 4;
     grid-row-start: 2;
     width: 200px;
@@ -274,6 +276,7 @@ img.finalfantasyxiv {
 }
 
 a.finalfantasyxiv {
+    margin-left: 10px;
     grid-column-start: 2;
     grid-row-start: 3;
     width: 200px;
