@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100&family=Saira+Semi+Condensed:wght@100&display=swap');
 
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
 body {
     display: grid;
     background : linear-gradient(#91a768,#377771);
@@ -29,6 +44,8 @@ div.logo {
     grid-row-start: 1;
     justify-content: center;
     z-index: var(--i);
+
+    
 }
 img.logo {
     
@@ -37,6 +54,7 @@ img.logo {
     transform: skewY(-15deg);
     transform-origin: right;
     z-index: var(--i);
+    
     
 }
 
@@ -50,6 +68,9 @@ div.nav {
     height: 1000px;
     width: 350px;
     background-color: #2a5856;
+
+    animation: float 3s ease-in-out infinite;
+    
 
 }
 
@@ -131,17 +152,67 @@ div.content{
     align-self: center;
 }
 
-img.eldenring {
-    
-    width: 500px;
+a.eldenring {
+    margin-left: 10px;
+    width: 350px;
     height: auto;
+    border-radius: 10px;
     grid-column-start: 2;
+    grid-row-start: 2;
+    transition: all 0.5s ease;
+    position: relative;
+    align-self: center;
+    
+    animation: float 3s ease-in-out infinite;
+
 }
 
-img.haloinfinite {
-    margin: 20px;
-    width: 500px;
+a.eldenring:hover {
+    transform: translateY(15px);
+    
+}
+ 
+img.eldenring {
+    width: 350px;
     height: auto;
+    
+    border-radius: 10px;
+    border: transparent;
+    background: linear-gradient(#377771,#91a768);
+}
+
+
+img.haloinfinite {
+    width: 350px;
+    height: auto;
+
+    padding: 10px;
+
+    border-radius: 10px;
+    border: transparent;
+    background: linear-gradient(#377771,#91a768);
+
+}
+
+a.haloinfinite {
+    grid-column-start: 3;
+    grid-row-start: 2;
+    width: 350px;
+    height: auto;
+
+    border-radius: 10px;
+    border: transparent;
+
+    transition: all 0.5s ease;
+    position: relative;
+    align-self: center;
+
+    animation: float 3s ease-in-out infinite;
+}
+
+a.haloinfinite:hover {
+    transform: translateY(15px);
+    
 }
 
 .footer {
@@ -149,7 +220,7 @@ img.haloinfinite {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #2a5856;
+  background-color: #ed6a5e;
   color: white;
   text-align: center;
   padding: 15px;

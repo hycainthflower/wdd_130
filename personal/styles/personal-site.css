@@ -1,24 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100&family=Saira+Semi+Condensed:wght@100&display=swap');
 
 
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+
 div.nav {
     display: grid;
     grid-column-start: 2;
-    grid-row-start: 2;
+    grid-row-start: 1;
+    
+
+    
+    animation: float 3s ease-in-out infinite;
 }
 
 div.logo {
     display: grid;
     grid-column-start: 2;
     grid-row-start: 1;
-    justify-content: center;
 }
 img.logo {
+    display: grid;
+    justify-self: center;
     width: 300px;
     height: auto;
     transform: skewY(-15deg);
     transform-origin: right;
     z-index: var(--i);
+    
+    grid-column-start: 2;
+    
     
 }
 
@@ -31,15 +52,15 @@ img.logo {
 body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
 
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     background: linear-gradient(#91a768,#377771);
 
     font-family: 'Saira Condensed', sans-serif;
 
+    
     
 }
 
@@ -48,7 +69,10 @@ div.content{
 }
 
 ul {
-    grid-column-start: 3;
+    margin-top: 15px;
+    display: grid;
+    justify-content: center;
+    grid-column-start: 2;
     grid-row-start: 3;
     position: relative;
     transform: skewY(-15deg);
