@@ -50,7 +50,7 @@ div.logo {
 }
 img.logo {
     
-    width: 300px;
+    width: 250px;
     height: auto;
     transform: skewY(-15deg);
     transform-origin: right;
@@ -66,8 +66,8 @@ div.nav {
     grid-column-end: 1;
     position: fixed;
 
-    height: 1000px;
-    width: 350px;
+    height: 100vh;
+    width: 250px;
     background-color: #2a5856;
 
     animation: float 3s ease-in-out infinite;
@@ -78,7 +78,7 @@ div.nav {
 ul {
     
     position: fixed;
-    margin-left: 100px;
+    margin-left: 45px;
     padding-top: 10px;
     grid-column-start: 1;
     grid-row-start: 2;
@@ -155,7 +155,7 @@ div.content{
 
 a.eldenring {
     margin-left: 10px;
-    width: 350px;
+    width: 200px;
     height: auto;
     border-radius: 10px;
     grid-column-start: 2;
@@ -176,7 +176,7 @@ a.eldenring:hover {
 
  
 img.eldenring {
-    width: 350px;
+    width: 200px;
     height: auto;
     
     border-radius: 10px;
@@ -186,7 +186,7 @@ img.eldenring {
 
 
 img.haloinfinite {
-    width: 350px;
+    width: 200px;
     height: auto;
 
     padding: 10px;
@@ -200,8 +200,9 @@ img.haloinfinite {
 a.haloinfinite {
     grid-column-start: 3;
     grid-row-start: 2;
-    width: 350px;
+    width: 200px;
     height: auto;
+
 
     border-radius: 10px;
     border: transparent;
@@ -218,6 +219,82 @@ a.haloinfinite:hover {
 }
 
 a.haloinfinite:hover {
+    transform: translateY(15px);
+    
+}
+
+img.nomanssky {
+    width: 200px;
+    height: auto;
+
+    padding: 10px;
+
+    border-radius: 10px;
+    border: transparent;
+    background: linear-gradient(#377771,#91a768);
+
+}
+
+a.nomanssky {
+    grid-column-start: 4;
+    grid-row-start: 2;
+    width: 200px;
+    height: auto;
+
+
+    border-radius: 10px;
+    border: transparent;
+
+    transition: all 0.5s ease;
+    position: relative;
+    align-self: center;
+
+    animation: float 3s ease-in-out infinite;
+}
+
+a.nomanssky:hover {
+    animation-play-state: paused; 
+}
+
+a.nomanssky:hover {
+    transform: translateY(15px);
+    
+}
+
+img.finalfantasyxiv {
+    width: 200px;
+    height: auto;
+
+    padding: 10px;
+
+    border-radius: 10px;
+    border: transparent;
+    background: linear-gradient(#377771,#91a768);
+
+}
+
+a.finalfantasyxiv {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    width: 200px;
+    height: auto;
+
+
+    border-radius: 10px;
+    border: transparent;
+
+    transition: all 0.5s ease;
+    position: relative;
+    align-self: center;
+
+    animation: float 3s ease-in-out infinite;
+}
+
+a.finalfantasyxiv:hover {
+    animation-play-state: paused; 
+}
+
+a.finalfantasyxiv:hover {
     transform: translateY(15px);
     
 }
