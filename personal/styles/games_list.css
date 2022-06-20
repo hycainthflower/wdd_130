@@ -329,6 +329,86 @@ a.finalfantasyxiv:hover {
     
 }
 
+img.reddeadredemption2 {
+    width: 250px;
+    height: auto;
+
+    padding: 10px;
+
+    border-radius: 10px;
+    border: transparent;
+    background: linear-gradient(#377771,#91a768);
+
+}
+
+a.redddeadredemption2 {
+    z-index: var(--i);
+    margin: 40px;
+    grid-column-start: 3;
+    grid-row-start: 3;
+    width: 250px;
+    height: auto;
+
+
+    border-radius: 10px;
+    border: transparent;
+
+    transition: all 0.5s ease;
+    position: relative;
+    align-self: center;
+
+    animation: float 3s ease-in-out infinite;
+}
+
+a.redddeadredemption2:hover {
+    animation-play-state: paused; 
+}
+
+a.redddeadredemption2:hover {
+    transform: translateY(15px);
+    
+}
+
+img.asassinscreedval {
+    width: 250px;
+    height: auto;
+
+    padding: 10px;
+
+    border-radius: 10px;
+    border: transparent;
+    background: linear-gradient(#377771,#91a768);
+
+}
+
+a.asassinscreedval {
+    z-index: var(--i);
+    margin: 40px;
+    grid-column-start: 2;
+    grid-row-start: 3;
+    width: 250px;
+    height: auto;
+
+
+    border-radius: 10px;
+    border: transparent;
+
+    transition: all 0.5s ease;
+    position: relative;
+    align-self: center;
+
+    animation: float 3s ease-in-out infinite;
+}
+
+a.asassinscreedval:hover {
+    animation-play-state: paused; 
+}
+
+a.asassinscreedval:hover {
+    transform: translateY(15px);
+    
+}
+
 .footer {
     position: fixed;
   left: 0;
