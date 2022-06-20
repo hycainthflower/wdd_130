@@ -225,3 +225,9 @@ a.haloinfinite:hover {
   text-align: center;
   padding: 15px;
 }
+
+@media screen and (max-width: 800px) {
+    .left, .main, .right {
+      width: 100%; 
+    }
+  }
