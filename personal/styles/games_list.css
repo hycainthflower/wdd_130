@@ -13,6 +13,7 @@
 		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 		transform: translatey(0px);
 	}
+    
 }
 
 body {
@@ -164,13 +165,15 @@ a.eldenring {
     align-self: center;
     
     animation: float 3s ease-in-out infinite;
+    
+    
 
 }
 
 a.eldenring:hover {
-    transform: translateY(15px);
-    
+    animation-play-state: paused; 
 }
+
  
 img.eldenring {
     width: 350px;
@@ -208,6 +211,10 @@ a.haloinfinite {
     align-self: center;
 
     animation: float 3s ease-in-out infinite;
+}
+
+a.haloinfinite:hover {
+    animation-play-state: paused; 
 }
 
 a.haloinfinite:hover {
