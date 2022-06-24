@@ -143,19 +143,88 @@ ul li:hover a {
     color: #fff;
 }
 
+div#contentreview {
+    display: grid;
+    
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 10;
 
+    margin-top: 25px;
+    margin-right: 25px;
+    margin-left: -200px;
+    background: linear-gradient(#91a768,#377771);
+    border: transparent;
+    border-radius: 10px;
+
+    animation: float 3s ease-in-out infinite
+}
+
+/* Content */
+
+
+/* Style the tab */
+.tab {
+    background: linear-gradient(#377771,#91a768);
+    border-radius: 10px;
+    overflow: hidden;
+    float: left;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    overflow: hidden;
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    
+    overflow: hidden;
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    
+    overflow: hidden;
+    float: left;
+    padding: 0px 12px;
+    width: 70%;
+    border-left: none;
+    height: 300px;
+}
 
 /* Footer and Media Screen */
 .footer {
     position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #ed6a5e;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  z-index: 3;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #ed6a5e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    z-index: 3;
 }
 
 @media screen and (max-width: 800px) {
